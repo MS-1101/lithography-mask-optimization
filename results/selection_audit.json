@@ -1,0 +1,889 @@
+{
+  "scope": "matching selected masks only; not a proof that all candidates have identical float32/float64 rank",
+  "records": [
+    {
+      "run": "development",
+      "clip": 1,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2993,
+        3581,
+        3446
+      ],
+      "scipy_float64_error_px": [
+        2993,
+        3581,
+        3446
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 1,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2955,
+        3645,
+        3012
+      ],
+      "scipy_float64_error_px": [
+        2955,
+        3645,
+        3012
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 1,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2982,
+        3673,
+        3037
+      ],
+      "scipy_float64_error_px": [
+        2982,
+        3673,
+        3037
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 1,
+      "method": "repair_aware",
+      "selected_step": 40,
+      "torch_float32_error_px": [
+        3892,
+        4266,
+        4315
+      ],
+      "scipy_float64_error_px": [
+        3892,
+        4266,
+        4315
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 2,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2625,
+        3147,
+        2764
+      ],
+      "scipy_float64_error_px": [
+        2625,
+        3147,
+        2764
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 2,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2430,
+        2757,
+        2517
+      ],
+      "scipy_float64_error_px": [
+        2430,
+        2757,
+        2517
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 2,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2432,
+        2745,
+        2540
+      ],
+      "scipy_float64_error_px": [
+        2432,
+        2745,
+        2540
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 2,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2432,
+        2745,
+        2540
+      ],
+      "scipy_float64_error_px": [
+        2432,
+        2745,
+        2540
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 3,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        5730,
+        6226,
+        6109
+      ],
+      "scipy_float64_error_px": [
+        5730,
+        6226,
+        6109
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 3,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        5600,
+        6187,
+        5710
+      ],
+      "scipy_float64_error_px": [
+        5600,
+        6187,
+        5710
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 3,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        5639,
+        6200,
+        5867
+      ],
+      "scipy_float64_error_px": [
+        5639,
+        6200,
+        5867
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "development",
+      "clip": 3,
+      "method": "repair_aware",
+      "selected_step": 40,
+      "torch_float32_error_px": [
+        6568,
+        6745,
+        7161
+      ],
+      "scipy_float64_error_px": [
+        6568,
+        6745,
+        7161
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 4,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1642,
+        1230,
+        2560
+      ],
+      "scipy_float64_error_px": [
+        1642,
+        1230,
+        2560
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 4,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1474,
+        1127,
+        2370
+      ],
+      "scipy_float64_error_px": [
+        1474,
+        1127,
+        2370
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 4,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1523,
+        1137,
+        2450
+      ],
+      "scipy_float64_error_px": [
+        1523,
+        1137,
+        2450
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 4,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1523,
+        1137,
+        2450
+      ],
+      "scipy_float64_error_px": [
+        1523,
+        1137,
+        2450
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 5,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2222,
+        2477,
+        3299
+      ],
+      "scipy_float64_error_px": [
+        2222,
+        2477,
+        3299
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 5,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2275,
+        2568,
+        2978
+      ],
+      "scipy_float64_error_px": [
+        2275,
+        2568,
+        2978
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 5,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2280,
+        2542,
+        3081
+      ],
+      "scipy_float64_error_px": [
+        2280,
+        2542,
+        3081
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 5,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2280,
+        2542,
+        3081
+      ],
+      "scipy_float64_error_px": [
+        2280,
+        2542,
+        3081
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 6,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2643,
+        3261,
+        2806
+      ],
+      "scipy_float64_error_px": [
+        2643,
+        3261,
+        2806
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 6,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2667,
+        3299,
+        2485
+      ],
+      "scipy_float64_error_px": [
+        2667,
+        3299,
+        2485
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 6,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2739,
+        3342,
+        2581
+      ],
+      "scipy_float64_error_px": [
+        2739,
+        3342,
+        2581
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 6,
+      "method": "repair_aware",
+      "selected_step": 80,
+      "torch_float32_error_px": [
+        2897,
+        3526,
+        2766
+      ],
+      "scipy_float64_error_px": [
+        2897,
+        3526,
+        2766
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 7,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1645,
+        1737,
+        2724
+      ],
+      "scipy_float64_error_px": [
+        1645,
+        1737,
+        2724
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 7,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1533,
+        1734,
+        2374
+      ],
+      "scipy_float64_error_px": [
+        1533,
+        1734,
+        2374
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 7,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1702,
+        1753,
+        2636
+      ],
+      "scipy_float64_error_px": [
+        1702,
+        1753,
+        2636
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 7,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1702,
+        1753,
+        2636
+      ],
+      "scipy_float64_error_px": [
+        1702,
+        1753,
+        2636
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 8,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        1077,
+        1184,
+        1371
+      ],
+      "scipy_float64_error_px": [
+        1077,
+        1184,
+        1371
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 8,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        972,
+        1134,
+        1158
+      ],
+      "scipy_float64_error_px": [
+        972,
+        1134,
+        1158
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 8,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        993,
+        1155,
+        1192
+      ],
+      "scipy_float64_error_px": [
+        993,
+        1155,
+        1192
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 8,
+      "method": "repair_aware",
+      "selected_step": 95,
+      "torch_float32_error_px": [
+        1016,
+        1153,
+        1221
+      ],
+      "scipy_float64_error_px": [
+        1016,
+        1153,
+        1221
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 9,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2600,
+        3563,
+        2910
+      ],
+      "scipy_float64_error_px": [
+        2600,
+        3563,
+        2910
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 9,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2756,
+        3731,
+        2700
+      ],
+      "scipy_float64_error_px": [
+        2756,
+        3731,
+        2700
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 9,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2815,
+        3743,
+        2795
+      ],
+      "scipy_float64_error_px": [
+        2815,
+        3743,
+        2795
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 9,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        2815,
+        3743,
+        2795
+      ],
+      "scipy_float64_error_px": [
+        2815,
+        3743,
+        2795
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 10,
+      "method": "nominal",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        556,
+        856,
+        1083
+      ],
+      "scipy_float64_error_px": [
+        556,
+        856,
+        1083
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 10,
+      "method": "robust",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        627,
+        829,
+        867
+      ],
+      "scipy_float64_error_px": [
+        627,
+        829,
+        867
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 10,
+      "method": "robust_postrepair",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        645,
+        825,
+        860
+      ],
+      "scipy_float64_error_px": [
+        645,
+        825,
+        860
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    },
+    {
+      "run": "heldout",
+      "clip": 10,
+      "method": "repair_aware",
+      "selected_step": 100,
+      "torch_float32_error_px": [
+        645,
+        825,
+        860
+      ],
+      "scipy_float64_error_px": [
+        645,
+        825,
+        860
+      ],
+      "evaluation_minus_selection_px": [
+        0,
+        0,
+        0
+      ],
+      "exact_match": true
+    }
+  ],
+  "checked_selected_masks": 40,
+  "exactly_matching_masks": 40,
+  "mismatching_masks": 0,
+  "max_absolute_corner_difference_px": 0
+}

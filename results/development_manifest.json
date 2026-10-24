@@ -1,0 +1,85 @@
+{
+  "config": {
+    "size": 512,
+    "physical_tile_nm": 2048,
+    "pixel_nm": 4.0,
+    "steps": 100,
+    "learning_rate": 0.25,
+    "initial_logit": 2.0,
+    "checkpoint_every": 5,
+    "radius_nm": 8.0,
+    "radius_px": 2,
+    "structure_width_px": 5,
+    "structure_center_span_nm": 16.0,
+    "repair_max_rounds": 16,
+    "seed": 20260908,
+    "device": "cpu",
+    "kernel_count": 24,
+    "rasterization": "OpenILT full 2048 inclusive fillPoly; point sample full[::stride,::stride]",
+    "loss": "mean over 3 corners of squared sigmoid-resist error / target foreground pixels",
+    "selection_loss": "mean over 3 corners of hard wafer XOR target pixel count",
+    "candidate_tie_break": "earliest checkpoint; repaired selector prefers valid candidates",
+    "design_split": {
+      "development": [
+        1,
+        2,
+        3
+      ],
+      "held_out": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "result_status": "archived CPU simulation experiment",
+    "compute_fairness": "robust variants share same gradient trajectory and candidate pool; repair/forward overhead reported separately; not equal wall time"
+  },
+  "config_sha256": "5ff8ec1b91585af42d7381327681c31f9b301a03797ba3070e2ad36f7d7ff2dc",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "processor": "arm",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "mps_available": true,
+    "cuda_available": false,
+    "torch_threads": 4
+  },
+  "provenance": {
+    "repository": "https://github.com/OpenOPC/OpenILT",
+    "commit": "dabb97c6ca3dfd159362e48273c436444c77353b",
+    "files": {
+      "kernel/kernels/combo_ct_defocus.pt": "a6f45cb496f5b69d5780d7e4a56e2a477e3465f4d2d8af4a964b749609850fa1",
+      "kernel/kernels/combo_ct_focus.pt": "a40cd9601ec109f4e6255db66f701a7c8ea68db426db21cb91d3d1b8385029f4",
+      "kernel/kernels/combo_defocus.pt": "1d4ed334b41ddb9549823d549e3b0cd785cecc1954e83e4e290010cbcfe7bb1e",
+      "kernel/kernels/combo_focus.pt": "9d6e799d9ca6d493672ac27d20cfcf49196c0e07c76c04878357f5b514f443b4",
+      "kernel/kernels/ct_defocus.pt": "46ef68fa244b66e0341e7e1f9c6db928cf7d0fc5593b3872f2da45ca3140296d",
+      "kernel/kernels/ct_focus.pt": "5c3827f58ce5c8dfaad069c798f4802c7f7b7ce1d5b79ed1b93bb168c198cee6",
+      "kernel/kernels/defocus.pt": "df624de9e17485d819e488ccada7edff133690cfa01370bfabec8f9e7cb8d532",
+      "kernel/kernels/focus.pt": "204bee39d8225c6d3cda52ea2d13b7c6f6cf4e4244de2ce960576d1bc741438f",
+      "kernel/scales/combo.pt": "649cf3734aa7d821ae9efee72562cd5ae561df11b303f7e087e98b0a95825980",
+      "kernel/scales/defocus.pt": "4ce70debf23593594c2fda1bd0cadf427abb0c132b16a047f6589f51148c8dc8",
+      "kernel/scales/focus.pt": "4e6f6136d419bdf0b56e9b461471c72d97ab3ba582fa19fe65ffaf25d188dab6",
+      "benchmark/ICCAD2013/M1_test1.glp": "398554df58c5bde23c9e638d5293d05a4ff13fadb67657d63e85dd7f25a97e2f",
+      "benchmark/ICCAD2013/M1_test10.glp": "ea814f0a7ffbf93f7e4d2404cf82e650552f4be55dd7e83c4160abdc5122387c",
+      "benchmark/ICCAD2013/M1_test2.glp": "27e5e8f2b5579fb6db4210134fff633a75a33f2ef718c54e1fc520909d252244",
+      "benchmark/ICCAD2013/M1_test3.glp": "7d887c37a62d7402e94c54c4f2e000e01ce21cb8a9ceadfc8aee50e5533f3fbf",
+      "benchmark/ICCAD2013/M1_test4.glp": "351fd80d1b8b51f35eb74fee88ba9dc67ffb4501e46fb2e02c7b06107d20e663",
+      "benchmark/ICCAD2013/M1_test5.glp": "bfb475e7284bd00ffb282efdbbfd5e15ba0e17d644d47360358b8cdaf207aba0",
+      "benchmark/ICCAD2013/M1_test6.glp": "c29cc9caa30b346520471a6755dca6dbbbbadd3fd0cde34a6405d6e2bcc13892",
+      "benchmark/ICCAD2013/M1_test7.glp": "f820678ee7d3f46d289785e06667c5efcd83ba6e706c74d85b3fa61230d2a134",
+      "benchmark/ICCAD2013/M1_test8.glp": "cae6644dc63785364886dca24fe5aadc16276ca2f7b13f57d86f22957034512b",
+      "benchmark/ICCAD2013/M1_test9.glp": "0fb1207fb79b2a7001e623d284a0166d97daec0825df6210870f4bbbd3e6aae4"
+    }
+  },
+  "clips": [
+    1,
+    2,
+    3
+  ],
+  "started_utc": "2026-09-08T15:47:33Z"
+}

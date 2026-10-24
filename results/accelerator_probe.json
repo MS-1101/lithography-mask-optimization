@@ -1,0 +1,21 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "processor": "arm",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "mps_available": true,
+    "cuda_available": false,
+    "torch_threads": 4
+  },
+  "device": "mps",
+  "size": 128,
+  "scope": "functional accelerator parity test, not a speedup benchmark",
+  "executed": true,
+  "forward_backward_s": 1.0585950841195881,
+  "forward_max_abs": 2.0265579223632812e-06,
+  "gradient_max_abs": 4.220055416226387e-10,
+  "gradient_relative_l2": 1.510869537924009e-06,
+  "passed": true
+}
