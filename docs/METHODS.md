@@ -13,7 +13,7 @@ This sampling preserves the physical Fourier-frequency indexing, but binary poly
 For focus or defocus mode $c$, the simulator sums the weighted intensities from all 24 coherent modes:
 
 $$
-I_c(M) = \sum_{k=1}^{24} w_{c,k}\left\lvert \mathcal{F}^{-1}\!\left(H_{c,k}\mathcal{F}(M)\right)\right\rvert^2.
+I_c(M) = \sum_{k=1}^{24} w_{c,k}\left\lvert \mathcal{F}^{-1}\left(H_{c,k}\mathcal{F}(M)\right)\right\rvert^2.
 $$
 
 The 35 × 35 kernel centers represent zero frequency. The implementation embeds frequency indices −17 through 17 into matching FFT bins on the current grid. Both transforms use PyTorch's `norm="forward"`: the forward transform divides by the pixel count, while the inverse adds no further normalization.
@@ -23,7 +23,7 @@ The three conditions are focus/amplitude 1.00, focus/amplitude 1.02, and defocus
 The smooth resist surrogate is
 
 $$
-R_c(M) = \mathrm{sigmoid}\!\left(50\left[d_c^2 I_c(M)-0.225\right]\right).
+R_c(M) = \mathrm{sigmoid}\left(50\left[d_c^2 I_c(M)-0.225\right]\right).
 $$
 
 The nominal objective uses only the nominal condition; the robust objective averages all three. Both minimize the summed squared difference from binary target $T$, normalized by target foreground count. Adam uses learning rate 0.25 for 100 updates. Pixel logits start at +2 inside the target and −2 outside, and a sigmoid maps them to continuous mask values. Only the central 1024 × 1024 nm region may transmit; the surrounding mask is fixed at zero. No total-variation or curvature penalty is used.
