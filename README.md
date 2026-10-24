@@ -20,7 +20,7 @@ The archived experiments optimize on a 512 × 512 grid over a fixed 2048 × 2048
 | Robust objective, then repair | 32,601.14 | 5/7 |
 | Repair-aware selection | 33,040.76 | 7/7 |
 
-Repair-aware selection and post-repair selection produce identical masks on five held-out layouts. On clips 6 and 8, repair-aware selection increases error by 2,810.67 and 266.67 nm² respectively while clearing the remaining defect pixels. The mean increase is 439.62 nm², or approximately 1.35% relative to post-repair selection. These finite-grid rules are morphology checks; they do not certify fabrication readiness.
+Repair-aware selection and post-repair selection produce identical masks on five held-out layouts. On clips 6 and 8, repair-aware selection increases error by 2,810.67 and 266.67 nm² respectively while clearing the remaining defect pixels. The mean increase is 439.62 nm², or approximately 1.35% relative to post-repair selection. Grid validity is evaluated using the two morphology checks described in [Methods](docs/METHODS.md#candidate-pool-and-repair).
 
 ## Implementation
 
@@ -54,8 +54,8 @@ python make_figures.py --out results/regenerated-figures
 
 For fresh experiments, input conventions, artifact schemas, and exact commands, see [Reproduction](docs/REPRODUCTION.md). The [Methods](docs/METHODS.md) document explains the objectives and candidate selector; [Results](docs/RESULTS.md) connects the findings to recorded evidence.
 
-## Scope and sources
+## Sources
 
-The archived results are CPU optical simulations using all 24 supplied modes. They do not measure wafer performance, foundry sign-off, GPU speedup, shot count, or official ICCAD gauge EPE. Two selected clips have additional 2048-grid evaluation; that limited check does not establish grid convergence for all layouts.
+The recorded experiments use CPU SOCS evaluation with all 24 optical modes. Additional 2048-grid evaluation is available for clips 1 and 4 in [Results](docs/RESULTS.md#native-grid-audit).
 
 Layouts, optical kernels, and the reference forward implementation come from [OpenOPC/OpenILT](https://github.com/OpenOPC/OpenILT/tree/dabb97c6ca3dfd159362e48273c436444c77353b). OpenILT's MIT notice is preserved in [OPENILT_LICENSE](OPENILT_LICENSE). The nominal and robust optimization routes in this repository are transparent project baselines, rather than published OpenILT or MOSAIC benchmark scores.
