@@ -1,0 +1,43 @@
+{
+  "config": {
+    "size": 512,
+    "physical_tile_nm": 2048,
+    "pixel_nm": 4.0,
+    "steps": 100,
+    "learning_rate": 0.25,
+    "initial_logit": 2.0,
+    "checkpoint_every": 5,
+    "radius_nm": 8.0,
+    "radius_px": 2,
+    "structure_width_px": 5,
+    "structure_center_span_nm": 16.0,
+    "repair_max_rounds": 16,
+    "seed": 20260908,
+    "device": "cpu",
+    "kernel_count": 24,
+    "rasterization": "OpenILT full 2048 inclusive fillPoly; point sample full[::stride,::stride]",
+    "loss": "mean over 3 corners of squared sigmoid-resist error / target foreground pixels",
+    "selection_loss": "mean over 3 corners of hard wafer XOR target pixel count",
+    "candidate_tie_break": "earliest checkpoint; repaired selector prefers valid candidates",
+    "design_split": {
+      "development": [
+        1,
+        2,
+        3
+      ],
+      "held_out": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "result_status": "archived CPU simulation experiment",
+    "compute_fairness": "robust variants share same gradient trajectory and candidate pool; repair/forward overhead reported separately; not equal wall time"
+  },
+  "config_sha256": "5ff8ec1b91585af42d7381327681c31f9b301a03797ba3070e2ad36f7d7ff2dc",
+  "frozen_utc": "2026-09-08T15:47:33Z"
+}
